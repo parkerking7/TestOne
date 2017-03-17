@@ -11,7 +11,7 @@ $(document).ready(function () {
         container += '</div>';
     }
 
-    $('.container').appen(container);
+    $('.container').append(container);
 
     $("#pink-box").click(function () {
         whichColor = 'pink';
@@ -25,7 +25,7 @@ $(document).ready(function () {
         whichColor = 'deeppink';
     });
 
-    $("#orange-box").clicl(function () {
+    $("#orange-box").click(function () {
         whichColor = 'orange';
     });
 
@@ -45,13 +45,13 @@ $(document).ready(function () {
     });
 
 
-    window.addEventListener("keypress", checkKeyPressed;
+    window.addEventListener("keypress", checkKeyPressed);
 
     function checkKeyPressed(key) {
         console.log(key);
         if (key.keyCode === 49) {
             whichColor = 'pink'
-        } else if (key.keyCode = 50) {
+        } else if (key.keyCode === 50) {
             whichColor = 'blue'
         } else if (key.keyCode === 51) {
             whichColor = 'deeppink'
